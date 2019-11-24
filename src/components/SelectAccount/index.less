@@ -1,0 +1,61 @@
+@import '~antd/lib/style/themes/default.less';
+.wrap {
+  .title {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    span{
+      color: #5384FF;
+    }
+  }
+  .swiper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    .item {
+      width: 260px;
+      overflow: hidden;
+      margin: auto;
+    }
+    .pic {
+      width: 60px;
+      height: 60px;
+      background: rgba(33, 101, 216, 1);
+      border-radius: 6px;
+    }
+    :global {
+      .ant-steps {
+        height: 80px;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        .ant-steps-item {
+          flex: initial;
+        }
+        .ant-steps-item-custom {
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .ant-steps-item-content {
+          display: none;
+        }
+        .ant-steps-item-title {
+          padding: 0;
+          &:after {
+            display: none;
+          }
+        }
+        .ant-steps-item-process {
+          img {
+            height: 80px;
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}

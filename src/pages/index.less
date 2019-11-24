@@ -1,0 +1,275 @@
+@import '~antd/lib/style/themes/default.less';
+
+:global {
+  .qrcodetip {
+    .ant-tooltip-inner {
+      background: #fffbdb;
+      color: #ffbf42;
+      box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+    }
+    .ant-tooltip-arrow {
+      border-left-color: #fffbdb;
+    }
+  }
+}
+
+.root {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .default {
+    // background: url('static/images/background.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid #5384ff;
+    background: #fff;
+    padding: 9px 0;
+    .logo {
+      position: absolute;
+      left: 20%;
+    }
+    .enterpriseReg {
+      position: absolute;
+      right: 20%;
+      top: 15px;
+    }
+    .enterpriseReg:hover {
+      background: #365fc5;
+    }
+  }
+  .imgWrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    :global {
+      .ant-carousel .slick-dots {
+        bottom: 25px;
+      }
+    }
+    .lun {
+      .pic {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+      }
+    }
+    .mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0);
+    }
+    &.type {
+      .mask {
+        width: 450px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  .login {
+    width: 400px;
+    height: 422px;
+    background: #fff;
+    border-radius: 4px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .main {
+      :global {
+        .ant-card {
+          .ant-card-head {
+            padding: 0;
+            text-align: left;
+          }
+          .ant-card-head-title {
+            padding: 11px 0;
+          }
+          .ant-card-body {
+            padding: 24px 0;
+          }
+        }
+        .ant-input {
+          background: #f2f2f2;
+          border: 1px solid #d5c3c4;
+          font-size: 14px;
+        }
+        .ant-form-item {
+          .has-error .ant-form-explain,
+          .has-error .ant-form-split {
+            // position: absolute;
+            height: 26px;
+            line-height: 26px;
+          }
+        }
+        // .has-error .ant-input-group-addon,.ant-input-group-addon{
+        //   border-color: #d5c3c4;
+        // }
+      }
+      width: 400px;
+      background: #fff;
+      padding: 0px 32px;
+      border-radius: 4px;
+      margin-top: 17px;
+      .disable {
+        background: #f2f2f2;
+        border-color: #f2f2f2;
+        color: #a6a6a6;
+      }
+      .dimensionCode {
+        width: 63px;
+        height: 63px;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.2);
+        margin-left: 16px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: @primary-color;
+        }
+      }
+
+      .forgetpwd {
+        float: right;
+        color: #999;
+        font-weight: 100;
+      }
+      .snsapi_login {
+        .tip {
+          font-size: 7px;
+          font-weight: 400;
+          color: rgba(0, 0, 0, 1);
+          line-height: 12px;
+          opacity: 0.7;
+          text-align: center;
+          margin: 20px 0;
+        }
+        .list {
+          text-align: center;
+          a {
+            margin: 0 10px;
+            img {
+              width: 42px;
+              height: 42px;
+            }
+          }
+        }
+      }
+      .codeLogin {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        .codeBg {
+          width: 200px;
+          height: 200px;
+        }
+        .codeTitle {
+          font-size: 16px;
+          color: #000;
+          border-bottom: 1px solid #ececec;
+          height: 40px;
+          text-align: left;
+        }
+        .qrcodeSuccess {
+          .phone {
+            position: relative;
+            height: 200px;
+            .check {
+              width: 40px;
+              height: 40px;
+              font-size: 40px;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+          .back {
+            color: #f40;
+            cursor: pointer;
+            font-weight: normal;
+            margin-top: 15px;
+          }
+        }
+        .twoDimensioncode {
+          text-align: center;
+          margin-bottom: 15px;
+          position: relative;
+          .mask {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            font-size: 20px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            .text {
+              width: 200px;
+              text-align: center;
+              margin-top: 50px;
+            }
+            .btn {
+              color: #fff;
+              text-align: center;
+              background: #2878ff;
+              padding: 0px 5px;
+              height: 50px;
+              line-height: 50px;
+              width: 120px;
+              border-radius: 5px;
+              margin: 20px auto;
+              cursor: pointer;
+              font-weight: 600;
+            }
+          }
+        }
+        .codeText,
+        .codeText2,
+        .codeText3 {
+          line-height: 30px;
+        }
+        .codeText2 {
+          color: #2363e8;
+          margin-top: 5px;
+          cursor: pointer;
+        }
+        .codeText3 {
+          color: #2363e8;
+          cursor: pointer;
+        }
+      }
+    }
+    .dowoload {
+      background: #848fa5;
+      color: #fff;
+      position: absolute;
+      bottom: -90px;
+      border-color: #848fa5;
+      &:hover {
+        background: #636e82;
+      }
+    }
+  }
+}
